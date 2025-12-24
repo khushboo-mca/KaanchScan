@@ -1,4 +1,4 @@
-import '../styles/Stategrid.css';
+import '../styles/StateGrid.css';
 import { useState, useEffect } from 'react';
 import post from '../api/post';
 import StateCard from './StateCard';
