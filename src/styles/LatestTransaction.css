@@ -1,0 +1,172 @@
+/* ===============================
+   ROOT CONTAINER
+================================ */
+.latesttransaction {
+  padding: 24px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: -1px 5px 11px 0px rgba(66, 68, 90, 1);
+  overflow-x: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.latesttransaction:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   TITLE
+================================ */
+.latesttransaction h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.latesttransaction table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  table-layout: fixed; 
+}
+
+/* ===============================
+   TABLE HEADER
+================================ */
+.latesttransaction thead {
+  background-color:oklab(69.781% -0.04431 -0.02045);
+  color:black;
+}
+
+.latesttransaction th {
+  padding: 10px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+/* ===============================
+   TABLE BODY
+================================ */
+.latesttransaction td {
+  padding: 12px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+/* ===============================
+   ROW HEIGHT (IMPORTANT)
+================================ */
+.latesttransaction tbody tr {
+  height: 52px;
+}
+
+/* ===============================
+   ROW HOVER
+================================ */
+.latesttransaction tbody tr:hover {
+   background-color:oklab(69.781% -0.04431 -0.02045);
+}
+
+/* ===============================
+   HASH / ADDRESS STYLE
+================================ */
+.latesttransaction td:nth-child(3),
+.latesttransaction td:nth-child(4) {
+  font-family: monospace;
+  font-size: 13px;
+}
+
+/*================= PAGINATION ================= */
+.pagenavigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+  flex-wrap: wrap; 
+}
+
+.pagenavigation button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color:oklab(69.781% -0.04431 -0.02045); 
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagenavigation button:hover:not(:disabled) {
+  background-color:oklab(69.781% -0.04431 -0.02045);
+  transform: translateY(-1px);
+}
+
+.pagenavigation button:disabled {
+  background-color:oklab(69.781% -0.04431 -0.02045); 
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pagenavigation span {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  border-radius: 6px;
+}
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .latesttransaction {
+    padding: 16px;
+
+    /*  Mobile only scroll */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .latesttransaction table {
+    min-width: 900px; 
+  }
+
+  .latesttransaction h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .pagenavigation {
+    gap: 6px;
+  }
+
+  .pagenavigation button,
+  .pagenavigation span {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}

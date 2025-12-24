@@ -1,0 +1,194 @@
+
+/* ================= ROOT ================= */
+.latestblock1 {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* ================= HEADING ================= */
+.latestblock1 h3 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ================= TABLE WRAPPER ================= */
+
+.blocks-table-wrapper1 {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* ================= TABLE ================= */
+.blocks-table1 {
+  width: 100%;
+  min-width: 900px; 
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ================= TABLE HEAD ================= */
+.table-head1 {
+  background-color: oklab(69.781% -0.04431 -0.02045);
+}
+
+.table-head1 th {
+  padding: 14px 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ================= TABLE BODY ================= */
+.blocks-table1 td {
+  padding: 12px 10px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* ================= ROW HOVER ================= */
+.blocks-table1 tbody tr:hover {
+  background-color: oklab(69.781% -0.04431 -0.02045);
+  transition: background 0.2s ease;
+}
+
+/* ================= PAGINATION ================= */
+.pagenavigation1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+  flex-wrap: nowrap;
+}
+
+.pagenavigation1 button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: oklab(69.781% -0.04431 -0.02045);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagenavigation1 button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.pagenavigation1 button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pagenavigation1 span {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  border-radius: 6px;
+}
+
+/* ================= EMPTY STATE ================= */
+.blocks-table1 td[colspan] {
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Wrapper for horizontal scroll */
+.blocks-table-wrapper1 {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Table base */
+.blocks-table1 {
+  width: 100%;
+  min-width: 1000px; 
+}
+/*  SMALL MOBILE (up to 480px) */
+
+@media (max-width: 480px) {
+  .latestblock1 {
+    padding: 12px;
+  }
+
+  .blocks-table1 {
+    min-width: 1100px; 
+  }
+
+  .blocks-table1 th,
+  .blocks-table1 td {
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+}
+
+/* NORMAL MOBILE (481px – 767px) */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .latestblock1 {
+    padding: 14px;
+  }
+
+  .blocks-table1 {
+    min-width: 1050px;
+  }
+
+  .blocks-table1 th,
+  .blocks-table1 td {
+    font-size: 13px;
+    padding: 12px 8px;
+  }
+}
+
+/*  TABLET (768px – 1023px) */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .latestblock1 {
+    padding: 18px;
+  }
+
+  .blocks-table1 {
+    min-width: 950px;
+  }
+
+  .blocks-table1 th,
+  .blocks-table1 td {
+    font-size: 13px;
+    padding: 12px 10px;
+  }
+}
+
+/*  LAPTOP (1024px – 1279px) */
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .blocks-table1 {
+    min-width: 100%;
+  }
+}
+
+/* DESKTOP (1280px and above) */
+
+@media (min-width: 1280px) {
+  .blocks-table1 {
+    min-width: 100%;
+  }
+
+  .blocks-table1 th,
+  .blocks-table1 td {
+    font-size: 14px;
+  }
+}

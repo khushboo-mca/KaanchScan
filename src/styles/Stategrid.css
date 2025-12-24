@@ -1,0 +1,32 @@
+.stategrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding: 30px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  width:100%;
+}
+
+/* --------------Laptop------------ */
+@media (max-width: 1400px) {
+  .stategrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*---------------- Tablet ---------------*/
+@media (max-width: 900px) {
+  .stategrid {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/*---------------------- Mobile----------------- */
+@media (max-width: 500px) {
+  .stategrid {
+     grid-template-columns:repeat(2,1fr);
+    width:100%;
+
+  }
+}

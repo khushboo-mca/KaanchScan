@@ -1,0 +1,80 @@
+/* ================================
+   MAIN CONTAINER (WHITE THEME)
+================================ */
+.collision-skeleton{
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-radius: 26px;
+  background:oklab(69.781% -0.04431 -0.02045);
+  overflow: hidden;
+}
+
+/* ================================
+   FLOATING LOGO
+================================ */
+.logo-float {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  background: rgba(0, 124, 149, 0.06);
+
+  animation-name: fastCollision;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  will-change: transform;
+}
+
+/* ================================
+   LOGO IMAGE
+================================ */
+.logo-float img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* KAAN LOGO THODA BADA */
+.logo-float img:last-child {
+  width: 34px;
+  height: 34px;
+}
+
+/* ================================
+   FAST MOVEMENT
+================================ */
+@keyframes fastCollision {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(120px, -90px); }
+  40%  { transform: translate(-140px, 110px); }
+  60%  { transform: translate(160px, 90px); }
+  80%  { transform: translate(-120px, -140px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .collision-skeleton {
+    height: 280px;
+  }
+
+  .logo-float {
+    width: 48px;
+    height: 48px;
+  }
+
+  .logo-float img:last-child {
+    width: 26px;
+    height: 26px;
+  }
+}

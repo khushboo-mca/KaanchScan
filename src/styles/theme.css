@@ -1,0 +1,22 @@
+/* ========= LIGHT MODE ========= */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #ffffff;
+  --border-color: #e5e5e5;
+}
+
+/* ========= DARK MODE ========= */
+[data-theme="dark"] {
+  --bg-color: #0c0c0c;
+  --text-color: #ffffff;
+  --card-bg: #161616;
+  --border-color: #2a2a2a;
+}
+
+/*========= APPLY TO FULL WEBSITE ========= */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

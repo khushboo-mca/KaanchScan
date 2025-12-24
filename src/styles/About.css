@@ -1,0 +1,47 @@
+.sponsored {
+  font-size: 18px;
+  padding: 0 20px;
+  margin: 10px 0;
+  line-height: 1.5;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* CTA link */
+.check-now {
+  color: #00a6c4;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* hover effect */
+.check-now:hover {
+  text-decoration: underline;
+}
+
+/* ===== Tablet & Mobile ===== */
+@media (max-width: 768px) {
+  .sponsored {
+    font-size: 15px;
+    padding: 0 12px;
+    margin: 8px 0;
+    line-height: 1.4;
+  }
+
+  .check-now {
+    font-size: 14px;
+  }
+}
+
+/* ===== Small Mobile (extra safety) ===== */
+@media (max-width: 480px) {
+  .sponsored {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .check-now {
+    font-size: 13px;
+  }
+}

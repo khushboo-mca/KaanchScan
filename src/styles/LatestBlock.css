@@ -1,0 +1,144 @@
+/* ===============================
+   ROOT CONTAINER
+================================ */
+.latestBlock {
+  padding: 24px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: -1px 5px 11px 0px rgba(66, 68, 90, 1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  
+  overflow-x: hidden;
+}
+
+.latestBlock:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   TITLE
+================================ */
+.latestBlock h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.latestBlock table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+   border-radius: 8px;
+  table-layout: fixed;
+}
+
+/* ===============================
+   TABLE HEADER
+================================ */
+.latestBlock thead {
+  background-color:oklab(69.781% -0.04431 -0.02045);
+  color:black
+}
+
+.latestBlock th {
+  padding: 10px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+/* ===============================
+   TABLE BODY
+================================ */
+.latestBlock td {
+  padding: 12px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+/* ===============================
+   ROW HEIGHT
+================================ */
+.latestBlock tbody tr {
+  height: 52px;
+}
+
+/* ===============================
+   ROW HOVER
+================================ */
+.latestBlock tbody tr:hover {
+  background-color: oklab(69.781% -0.04431 -0.02045);
+}
+
+/* ===============================
+   HASH / ADDRESS STYLE
+================================ */
+.latestBlock td:nth-child(3),
+.latestBlock td:nth-child(4) {
+  font-family: monospace;
+  font-size: 13px;
+}
+
+/* ===============================
+   6th COLUMN — FULLY VISIBLE
+================================ */
+.latestBlock th:nth-child(6),
+.latestBlock td:nth-child(6) {
+  width: 220px;             
+  min-width: 220px;
+  text-align: right;
+  padding-right: 24px;
+
+  white-space: normal;      
+  overflow: visible;        
+  text-overflow: unset;     
+  word-break: break-word;  
+  font-family: monospace;
+  font-size: 13px;
+}
+
+/* ===============================
+   COLUMN ALIGNMENT
+================================ */
+.latestBlock th:nth-child(5),
+.latestBlock td:nth-child(5) {
+  text-align: center;
+}
+
+/* ===============================
+   MOBILE — HORIZONTAL SCROLL
+================================ */
+@media (max-width: 768px) {
+  .latestBlock {
+    padding: 16px;
+
+    /*  Mobile only scroll */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .latestBlock table {
+    min-width: 900px; 
+  }
+
+  .latestBlock h3 {
+    font-size: 18px;
+  }
+}

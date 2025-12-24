@@ -1,0 +1,189 @@
+/* ROOT CONTAINER */
+.validators-container {
+  width: 100%;
+  padding: 24px;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.validators-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.validators-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* TABS */
+.validator-tabs button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 6px;
+  border: 1px solid #00bcd4;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.validator-tabs button.active {
+  background-color: oklab(69.781% -0.04431 -0.02045);
+  color: #ffffff;
+}
+
+.validator-tabs button.inactive:hover {
+  background-color:oklab(69.781% -0.04431 -0.02045);
+}
+
+/* ================= TABLE WRAPPER (NEW) ================= */
+.validators-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* TABLE */
+.validators-table {
+  min-width: 900px; 
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+/* TABLE HEADER */
+.table-head {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+  padding: 14px;
+  background-color: oklab(69.781% -0.04431 -0.02045);
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ROW */
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+  padding: 14px;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+/* Hover ONLY when real data exists */
+/*.table-row:hover {
+  background-color: #f5fdff;
+}*/
+
+/* VALIDATOR INFO */
+.validator-info strong {
+  display: block;
+  font-size: 15px;
+}
+
+.validator-info small {
+  font-size: 12px;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  padding: 6px 12px;
+  border: 1px solid #00bcd4;
+  background: transparent;
+  color: #00bcd4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-outline:hover {
+  background-color: #e0f7fa;
+}
+
+.btn-primary {
+  padding: 6px 14px;
+  background-color: oklab(69.781% -0.04431 -0.02045);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 6px 14px;
+  border-radius: 5px;
+  border: 1px solid oklab(69.781% -0.04431 -0.02045);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagenavigation span {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: lab(76.8% -17.35 -26.12);
+  border-radius: 6px;
+  color:black;
+}
+
+
+/* ================= SKELETON / LOADING ================= */
+
+.latesttransaction {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.latesttransaction * {
+  box-shadow: none !important;
+}
+
+/*.latesttransaction h3 {
+}*/
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .validators-container {
+    padding: 16px;
+  }
+
+  .validators-header h2 {
+    font-size: 20px;
+  }
+
+  .validator-tabs button {
+    margin-left: 0;
+    margin-right: 8px;
+    font-size: 13px;
+  }
+}

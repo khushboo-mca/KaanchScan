@@ -1,0 +1,42 @@
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color:oklab(69.781% -0.04431 -0.02045);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+  max-width: 900px;
+  margin: 10px auto;
+}
+
+/* Title styling */
+#title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Image styling */
+#img {
+  width: 120%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #title {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 24px 16px;
+  }
+}

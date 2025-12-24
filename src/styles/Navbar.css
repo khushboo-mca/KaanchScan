@@ -1,0 +1,206 @@
+/* ===== GLOBAL SAFETY ===== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== NAVBAR (DESKTOP DEFAULT) ===== */
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* ===== LOGO ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* ===== RIGHT CONTROLS ===== */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+
+/* ===== ICONS ===== */
+.icon-wrap img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* ===== THEME TOGGLE (SMALLER FIX) ===== */
+.theme-toggle img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+/* ===== REMOVE THEME TOGGLE BORDER / BOX ===== */
+.theme-toggle,
+.theme-toggle img,
+.theme-toggle button {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* focus / active state fix */
+.theme-toggle:focus,
+.theme-toggle:active,
+.theme-toggle img:focus,
+.theme-toggle img:active,
+.theme-toggle button:focus,
+.theme-toggle button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ===== TESTNET ===== */
+.network {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+/* ===== Dropdown Menu ===== */ 
+.dropdown {
+   position: absolute; 
+   top: 60px; right: 60px; 
+   background: #ffffff; 
+   border-radius: 8px solid #400080; 
+   min-width: 100px; 
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); 
+   overflow: hidden; 
+   animation: fadeDown 0.2s ease; 
+  }
+   .drop-item {
+     padding: 10px 14px;
+      font-size: 14px; 
+      cursor: pointer; 
+      text-decoration: none;
+      display: block;
+      } 
+    .drop-item:hover {
+       background-color:oklab(69.781% -0.04431 -0.02045);; 
+      }
+/* ================= TABLET ================= */
+@media (max-width: 992px) {
+  .Navbar {
+    height: 68px;
+    padding: 0 16px;
+  }
+
+  .logo img {
+    height: 36px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .theme-toggle img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .network {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .dropdown {
+    min-width: 120px;
+    right: 0;
+  }
+
+  .drop-item {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 480px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .Navbar {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .logo img {
+    height: 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .theme-toggle img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .icon-wrap img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .network {
+    font-size: 10px;
+    padding: 4px 6px;
+    max-width: 70px;
+  }
+
+  /* Dropdown mobile fix */
+   .dropdown { 
+    position: fixed; 
+    top: 64px;
+     right: 12px; 
+     min-width:50px;
+      border-radius: 10px;
+     }
+}

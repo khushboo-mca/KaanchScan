@@ -1,0 +1,149 @@
+
+/* ===============================
+   MAIN SECTION
+================================ */
+.tokens-section {
+  width: 100%;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  overflow-x: auto; 
+}
+
+/* ===============================
+   TITLE
+================================ */
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* ===============================
+   HORIZONTAL SCROLL WRAPPER
+================================ */
+.token-table-wrapper {
+  width: 100%;
+  overflow-x: auto;             
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ===============================
+   TABLE ROW
+================================ */
+.token-row {
+  display: grid;
+  grid-template-columns:
+    2.2fr
+    3.8fr
+    1.6fr
+    1.4fr
+    1.6fr;
+  min-width: 900px; 
+  align-items: center;
+  padding: 14px 24px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.token-row.header {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: oklab(69.781% -0.04431 -0.02045);
+  border-bottom: 2px solid #dcdcdc;
+}
+
+/* ===============================
+   TOKEN NAME
+================================ */
+.token-name {
+  display: flex;
+  align-items: center;
+}
+
+.symbol {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* ===============================
+   CONTRACT ADDRESS
+================================ */
+.contract-address {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* ===============================
+   TOTAL SUPPLY
+================================ */
+.supply {
+  font-weight: 500;
+}
+
+/* ===============================
+   MARKET CAP (RIGHT)
+================================ */
+.market-cap {
+  text-align: right;
+  padding-right: 8px;
+}
+
+/* ===============================
+   CREATION DATE (RIGHT)
+================================ */
+.date {
+  text-align: right;
+  padding-right: 8px;
+}
+
+/* Header alignment for right columns */
+.token-row.header div:nth-child(4),
+.token-row.header div:nth-child(5) {
+  text-align: right;
+  padding-right: 8px;
+}
+
+/* ===============================
+   HOVER
+================================ */
+.token-row:not(.header):hover {
+  background: oklab(69.781% -0.04431 -0.02045);
+}
+
+/* ===============================
+   RESPONSIVE: MOBILE + TABLET HORIZONTAL SCROLL
+================================ */
+@media (max-width: 1024px) {
+  .token-row {
+    min-width: 900px; 
+  }
+
+  .tokens-section {
+    padding: 16px;
+  }
+
+  .token-row th,
+  .token-row td {
+    font-size: 13px; 
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .token-row {
+    min-width: 1000px; 
+    font-size: 12px;
+  }
+
+  .tokens-section {
+    padding: 12px;
+  }
+}
